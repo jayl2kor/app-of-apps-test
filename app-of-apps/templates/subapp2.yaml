@@ -3,7 +3,7 @@ kind: Application
 metadata:
   labels:
     argocd.argoproj.io/refresh: hard
-  name: arceye-base-credentials
+  name: subapp2
   namespace: arceye-test
 spec:
   destination:

@@ -17,7 +17,7 @@ spec:
       path: app-of-apps
       helm:
         valueFiles:
-          - $valueRepo/configmap.yaml
+          - $valueRepo/app-of-apps/values.yaml
 
     - ref: valueRepo
       targetRevision: master

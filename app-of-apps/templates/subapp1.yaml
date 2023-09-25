@@ -4,7 +4,7 @@ metadata:
   labels:
     argocd.argoproj.io/refresh: hard
   name: subapp1
-  namespace: arceye-test
+  namespace: argocd
 spec:
   project: default
   destination:

@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  labels:
+    argocd.argoproj.io/refresh: hard
+  name: arceye-base-credentials
+  namespace: arceye-test
+spec:
+  destination:
+    namespace: arceye-test
+    server: {{ .Values.spec.destination.server }}
+  project: arceye
+  sources:
+  - chart: subapp1
+    helm:
+      valueFiles:
+      - $valueRepo/subapp2/values.yaml
+    repoURL: {{ .Values.spec.sources.subapp2.repoURL }}
+    targetRevision: {{ .Values.spec.sources.subapp2.targetRevision }}
+    path: subapp1
+  - ref: valueRepo
+    repoURL: {{ .Values.spec.sources.subapp2.repoURL }}
+    targetRevision: {{ .Values.spec.sources.subapp2.targetRevision }}
+  syncPolicy: {}

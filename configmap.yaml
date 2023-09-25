@@ -1,0 +1,12 @@
+apiVersion: v1
+data: 
+  test-1.0.0.yaml: |
+    a: "test success"
+    b: "test success"
+  test-1.0.1.yaml: |
+    a: "test success"
+    b: "test success"
+kind: ConfigMap
+metadata:
+  name: subapp1-test
+  namespace: arceye-test

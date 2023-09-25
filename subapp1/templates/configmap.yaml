@@ -1,7 +1,7 @@
 apiVersion: v1
 data: 
-  test-1.0.0.yaml: {{ .Values.test-1.0.0.yaml }}
-  test-1.0.1.yaml: {{ .Values.test-1.0.1.yaml }}
+  test-1.0.0.yaml: {{ .Values.data.test-1.0.0.yaml }}
+  test-1.0.1.yaml: {{ .Values.data.test-1.0.1.yaml }}
 kind: ConfigMap
 metadata:
   name: subapp1-test

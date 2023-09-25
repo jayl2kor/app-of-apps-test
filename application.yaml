@@ -3,7 +3,7 @@ kind: Application
 metadata:
   labels:
     argocd.argoproj.io/refresh: hard
-  name: app-components
+  name: app-components-test
   namespace: argocd
 spec:
   project: arceye
@@ -13,12 +13,12 @@ spec:
   syncPolicy: {}
   sources:
     - repoURL: https://github.com/jayl2kor/app-of-apps-test
-      targetRevision: master
+      targetRevision: HEAD
       path: app-of-apps
       helm:
         valueFiles:
           - $valueRepo/app-of-apps/values.yaml
 
     - ref: valueRepo
-      targetRevision: master
+      targetRevision: HEAD
       repoURL: https://github.com/jayl2kor/app-of-apps-test

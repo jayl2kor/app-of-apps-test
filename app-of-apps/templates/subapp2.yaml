@@ -6,6 +6,7 @@ metadata:
   name: subapp2
   namespace: arceye-test
 spec:
+  project: default
   destination:
     namespace: arceye-test
     server: {{ .Values.spec.destination.server }}

@@ -9,6 +9,7 @@ spec:
   destination:
     namespace: arceye-test
     server: {{ .Values.spec.destination.server }}
+  project: default
   sources:
   - chart: subapp1
     helm:

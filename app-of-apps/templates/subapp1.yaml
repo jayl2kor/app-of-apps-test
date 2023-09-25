@@ -6,10 +6,10 @@ metadata:
   name: subapp1
   namespace: arceye-test
 spec:
+  project: default
   destination:
-    namespace: arceye-test
+    namespace: argocd
     server: {{ .Values.spec.destination.server }}
-  project: arceye-test
   sources:
   - chart: subapp1
     helm:

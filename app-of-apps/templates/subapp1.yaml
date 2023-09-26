@@ -8,7 +8,7 @@ metadata:
 spec:
   project: default
   destination:
-    namespace: argocd
+    namespace: arceye-test
     server: {{ .Values.spec.destination.server }}
   sources:
   - chart: subapp1

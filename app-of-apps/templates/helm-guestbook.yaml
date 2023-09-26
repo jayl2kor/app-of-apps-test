@@ -14,10 +14,14 @@ spec:
   - helm:
       valueFiles:
       - $valueRepo/values.yaml
+      - $configmapRepo/configmap.yaml
     repoURL: {{ .Values.spec.sources.subapp1.repoURL }}
     targetRevision: {{ .Values.spec.sources.subapp1.targetRevision }}
     path: helm-guestbook
   - ref: valueRepo
+    repoURL: {{ .Values.spec.sources.subapp1.repoURL }}
+    targetRevision: {{ .Values.spec.sources.subapp1.targetRevision }}
+  - ref: configmapRepo
     repoURL: {{ .Values.spec.sources.subapp1.repoURL }}
     targetRevision: {{ .Values.spec.sources.subapp1.targetRevision }}
   syncPolicy: {}

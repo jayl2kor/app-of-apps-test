@@ -46,9 +46,7 @@ affinity: {}
 
 configmap:
   data: |
-    success.yaml: 
-      true
+    success.yaml: true
     really.yaml: 
-      yeah:
-        true
+      yeah: true
 

@@ -45,7 +45,7 @@ tolerations: []
 affinity: {}
 
 configmap:
-  data: |
+  data: |-
     success.yaml: true
     really.yaml: 
       yeah:

@@ -4,11 +4,11 @@ metadata:
   labels:
     argocd.argoproj.io/refresh: hard
   name: subapp2
-  namespace: arceye-test
+  namespace: argocd
 spec:
   project: default
   destination:
-    namespace: arceye-test
+    namespace: argocd
     server: {{ .Values.spec.destination.server }}
   sources:
   - chart: subapp1

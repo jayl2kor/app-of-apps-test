@@ -6,7 +6,7 @@ metadata:
   name: app-components-test
   namespace: argocd
 spec:
-  project: arceye
+  project: default
   destination:
     namespace: argocd
     server: https://kubernetes.default.svc

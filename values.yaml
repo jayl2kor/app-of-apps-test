@@ -48,7 +48,7 @@ configmap:
   data: 
     a-1.0.1.yaml: |
       asersf: sdoify
-      asfsaf: aasfsa 
+      asfsaf: aasfsa
     a-1.0.0.yaml: |
-      asdassafas: sadsadasd 
+      asdassafas: sadsadasd
       asfasfasfsa: safsafsaf

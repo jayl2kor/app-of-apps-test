@@ -46,5 +46,10 @@ affinity: {}
 
 configmap:
   data: |
-    default.yaml: true
+    a-1.0.1.yaml: |
+      asersf: sdoify
+      asfsaf: aasfsa 
+    a-1.0.0.yaml: |
+      asdassafas: sadsadasd 
+      asfasfasfsa: safsafsaf
     

@@ -3,7 +3,7 @@ kind: Application
 metadata:
   labels:
     argocd.argoproj.io/refresh: hard
-  name: subapp1
+  name: helm-guestbook
   namespace: argocd
 spec:
   project: default

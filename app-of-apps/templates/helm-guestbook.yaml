@@ -21,7 +21,4 @@ spec:
   - ref: valueRepo
     repoURL: {{ .Values.spec.sources.subapp1.repoURL }}
     targetRevision: {{ .Values.spec.sources.subapp1.targetRevision }}
-  - ref: configmapRepo
-    repoURL: {{ .Values.spec.sources.subapp1.repoURL }}
-    targetRevision: {{ .Values.spec.sources.subapp1.targetRevision }}
   syncPolicy: {}

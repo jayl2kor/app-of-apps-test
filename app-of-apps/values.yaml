@@ -4,12 +4,12 @@ spec:
   sources:
     subapp1:
       repoURL: https://github.com/jayl2kor/app-of-apps-test
-      targetRevision: HEAD
+      targetRevision: master
       configmapRepo: https://github.com/jayl2kor/app-of-apps-test
       configmapPath: configmap.yaml
       path: subapp1
     subapp2:
       repoURL: https://github.com/jayl2kor/app-of-apps-test
-      targetRevision: HEAD
+      targetRevision: master
       path: subapp2
     

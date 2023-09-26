@@ -11,8 +11,7 @@ spec:
     namespace: argocd
     server: {{ .Values.spec.destination.server }}
   sources:
-  - chart: helm-guestbook
-    helm:
+  - helm:
       valueFiles:
       - $valueRepo/values.yaml
     repoURL: {{ .Values.spec.sources.subapp1.repoURL }}

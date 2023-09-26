@@ -1,13 +1,12 @@
 apiVersion: v1
 data: 
-  a:
-    test: asf
-    test2:
-      aa: asff
-  aa:
-    yeah: fsaf
-  aaa:
-    yeah: asd
+  a-1.0.1.yaml: |
+    asersf: sdoify
+    asfsaf: aasfsa 
+  a-1.0.0.yaml: |
+    asdassafas: sadsadasd 
+    asfasfasfsa: safsafsaf
+
 kind: ConfigMap
 metadata:
   creationTimestamp: "2023-09-22T09:36:17Z"

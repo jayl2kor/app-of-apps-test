@@ -17,7 +17,7 @@ spec:
       - $valueRepo/values.yaml
     repoURL: {{ .Values.spec.sources.subapp1.repoURL }}
     targetRevision: {{ .Values.spec.sources.subapp1.targetRevision }}
-    path: subapp1
+    path: helm-guestbook
   - ref: valueRepo
     repoURL: {{ .Values.spec.sources.subapp1.repoURL }}
     targetRevision: {{ .Values.spec.sources.subapp1.targetRevision }}

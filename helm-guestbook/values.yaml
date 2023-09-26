@@ -43,3 +43,8 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+configmap:
+  data: |
+    default.yaml: true
+    

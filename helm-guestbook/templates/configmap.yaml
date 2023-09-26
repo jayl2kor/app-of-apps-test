@@ -8,13 +8,11 @@
 apiVersion: v1
 data:
   a-1.0.0.yaml:
-    test: 'true'
+    test: true
     test2:
-      aa: 2
+      help: please
   a-1.0.1.yaml:
-    yeah: 'true'
-  really.yaml:
-    yeah: 'true'
+    test: json
 kind: ConfigMap
 metadata:
   labels:

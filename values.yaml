@@ -44,14 +44,14 @@ tolerations: []
 
 affinity: {}
 
-# configmap:
-#   data: 
-#     a-1.0.0.yaml: 
-#       test: 'true'
-#       test2: 
-#         aa: 2
-#     a-1.0.1.yaml: 
-#       yeah: 'true'
-#     really.yaml: 
-#       yeah: 'true'
+configmap:
+  data: 
+    a-1.0.0.yaml: 
+      test: 'true'
+      test2: 
+        aa: 2
+    a-1.0.1.yaml: 
+      yeah: 'true'
+    really.yaml: 
+      yeah: 'true'
 

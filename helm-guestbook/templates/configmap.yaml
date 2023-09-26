@@ -1,10 +1,15 @@
 apiVersion: v1
-data:
-  a: b
-  c: d
+data: 
+  a-1.0.0.yaml:
+    test: "true"
+    test2:
+      aa: 2
+  a-1.0.1.yaml:
+    yeah: "true"
+  really.yaml:
+    yeah: "{{ .Values.configmap.data | toYaml | nindent 2 }}"
 kind: ConfigMap
 metadata:
-  labels:
-    argocd.argoproj.io/instance: helm-guestbook
+  creationTimestamp: "2023-09-22T09:36:17Z"
   name: workflow-parameter
   namespace: argocd

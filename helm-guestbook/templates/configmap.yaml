@@ -1,0 +1,15 @@
+apiVersion: v1
+data:
+  a-1.0.0.yaml: |
+    apiVersion: argoproj.io/v1alpha1
+  a-1.0.1.yaml: |
+    apiVersion: argoproj.io/v1alpha1
+  b-1.0.0.yaml: |
+    apiVersion: argoproj.io/v1alpha1
+  b-1.0.1.yaml: |
+    apiVersion: argoproj.io/v1alpha1
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2023-09-22T09:36:17Z"
+  name: workflow-parameter
+  namespace: argocd

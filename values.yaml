@@ -43,3 +43,15 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+configmap:
+  data: |
+    a-1.0.0.yaml: 
+      apiVersion: argoproj.io/v1alpha1
+    a-1.0.1.yaml: 
+      apiVersion: argoproj.io/v1alpha1
+    b-1.0.0.yaml: 
+      apiVersion: argoproj.io/v1alpha1
+    b-1.0.1.yaml: 
+      apiVersion: argoproj.io/v1alpha1
+

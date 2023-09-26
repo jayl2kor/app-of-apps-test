@@ -1,8 +1,0 @@
-apiVersion: v1
-data:
-  {{ .Values.configmap.data }}
-kind: ConfigMap
-metadata:
-  creationTimestamp: "2023-09-22T09:36:17Z"
-  name: workflow-parameter
-  namespace: argocd
